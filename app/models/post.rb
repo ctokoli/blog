@@ -1,5 +1,5 @@
 class Post < ApplicationRecord
   validates :content, presence: true
   validates :title, presence: true
-  has_many :comments
+  has_many :comments, dependent: :destroy
 end
