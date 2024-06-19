@@ -1,0 +1,5 @@
+<%= form_with model: [ @post, Comment.new] do |form| %>
+  <p>Your Comment</p>
+  <%= form.text_area :content, size: "20x5", class: "block shadow rounded-md border border-gray-400 outline-none px-3 py-2 mt-2 w-full"  %>
+  <%= form.submit  class: "rounded-lg py-3 px-5 mt-3 bg-blue-600 text-white inline-block font-medium cursor-pointer" %>
+<% end %>
